@@ -70,3 +70,19 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+main {
+    width: 100vw;
+    height: auto;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.main-image img {
+    width: 100%;
+    height: 800px;
+}
+
+
