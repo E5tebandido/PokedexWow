@@ -2,6 +2,7 @@
   --primary-color: #12254B;
   --secondary-color: #24C2AA;
   --white: #FFFFFF;
+  --black-blue: #0e1336;
   --title: 4.8rem;
   --large: 3rem;
   --medium: 2rem;
@@ -78,11 +79,91 @@ main {
 
 .main-image {
     width: 100%;
+    height: 800px;
 }
 
 .main-image img {
     width: 100%;
     height: 800px;
+}
+
+.main-section-cards {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--black-blue);
+}
+
+.main-cards {
+    width: 1166px;
+    height: 584px;
+    background-image: linear-gradient(to bottom, #2e3351, #2a2e4c, #252947, #212443, #1d1f3e); 
+    border-radius: 50px;   
+    margin-top: 67px;
+}
+
+.main-cards h2 {
+    text-align: center;
+    margin-top: 67px;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--title);
+    line-height: 6.24rem;
+    font-weight: bold;
+    color: #D5F8F3;
+}
+
+.container-cards {
+    margin-top: 67px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 260px);
+    gap: 20px;
+}
+
+.pokemon-card {
+    width: 260px;
+    height: 304px;
+    border: 3px solid #A7F0E5;
+    border-radius: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.pokemon-card img {
+    margin-top: 18px;
+}
+
+.pokemon-card h4 {
+    margin-top: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.1rem;
+    color: var(--white);
+}
+
+.pokemon-card p {
+    margin-top: 4px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 2.1rem;
+    color: var(--white);
+}
+
+.pokemon-card .number {
+    width: 79.78px;
+    height: 79.78px;
+    border-radius: 50%;
+    background-color: #24C2AB;
+    position: absolute;
+    bottom: -50px;
+    right: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.9rem;
+    font-weight: 800;
+    color: var(--white);
 }
 
 
