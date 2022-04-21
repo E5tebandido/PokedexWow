@@ -1,6 +1,7 @@
 :root {
   --primary-color: #12254B;
   --secondary-color: #24C2AA;
+  --white: #FFFFFF;
   --title: 4.8rem;
   --large: 3rem;
   --medium: 2rem;
@@ -15,4 +16,57 @@
 
 html {
     font-size: 62.5%;
+}
+
+.header {
+    width: 100vw;
+    height: 90px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.logo img {
+    margin-left: 100px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.menu {
+    width: 100%;
+    margin-right: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav ul li {
+    list-style: none;
+    margin-left: 73px;
+    font-family: 'Mulish', sans-serif;
+    font-size: var(--medium);
+    color: var(--white);
+    line-height: 2.51rem;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.header nav ul li:hover {
+    border: 1px solid #EFFBFF;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.search {
+    width: 19px;
+    height: 19px;
+    margin-left: 76px;
+    background-image: url('../assets/Search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
