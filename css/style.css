@@ -3,6 +3,7 @@
   --secondary-color: #24C2AA;
   --white: #FFFFFF;
   --black-blue: #0e1336;
+  --video-title: #D5F8F3;
   --title: 4.8rem;
   --large: 3rem;
   --medium: 2rem;
@@ -17,6 +18,7 @@
 
 html {
     font-size: 62.5%;
+
 }
 
 .header {
@@ -28,13 +30,12 @@ html {
 }
 
 .logo img {
-    margin-left: 100px;
-    margin-top: 13px;
-    margin-bottom: 13px;
+    margin-left: 5.2vw;
+    padding: 13px 0 13px;
 }
 
 .menu {
-    width: 100%;
+    width: 100vw;
     margin-right: 80px;
     display: flex;
     justify-content: end;
@@ -47,7 +48,7 @@ html {
 
 .header nav ul li {
     list-style: none;
-    margin-left: 73px;
+    margin-left: 3vw;
     font-family: 'Mulish', sans-serif;
     font-size: var(--medium);
     color: var(--white);
@@ -62,29 +63,18 @@ html {
     padding: 12px;
 }
 
-.search {
-    width: 19px;
-    height: 19px;
-    margin-left: 76px;
-    background-image: url('../assets/Search.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 main {
     width: 100vw;
     height: auto;
 }
 
-.main-image {
-    width: 100%;
-    height: 800px;
+.main-image{
+    background-color: var(--black-blue);
 }
 
 .main-image img {
-    width: 100%;
-    height: 800px;
+    width: 100vw;
+    height: auto;
 }
 
 .main-section-cards {
@@ -96,16 +86,17 @@ main {
 }
 
 .main-cards {
-    width: 1166px;
-    height: 584px;
+    width: 92vw;
+    height: auto;
     background-image: linear-gradient(to bottom, #2e3351, #2a2e4c, #252947, #212443, #1d1f3e); 
     border-radius: 50px;   
     margin-top: 67px;
+    padding-bottom: 80px;
 }
 
 .main-cards h2 {
     text-align: center;
-    margin-top: 67px;
+    padding: 67px 0 67px;
     font-family: 'Poppins', sans-serif;
     font-size: var(--title);
     line-height: 6.24rem;
@@ -114,11 +105,16 @@ main {
 }
 
 .container-cards {
-    margin-top: 67px;
-    display: grid;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    width: 92vw;
+    gap: 20px;
+    /*display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 260px);
-    gap: 20px;
+    gap: 20px;*/
 }
 
 .pokemon-card {
@@ -128,6 +124,7 @@ main {
     border-radius: 28px;
     text-align: center;
     position: relative;
+    margin: 0 0 50px;
 }
 
 .pokemon-card img {
@@ -166,4 +163,67 @@ main {
     color: var(--white);
 }
 
+.video-section {
+    padding-bottom: 130px;
+    background-color: var(--black-blue);
+}
 
+.video-section h2 {
+    padding: 67px 0 67px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--title);
+    font-weight: bold;
+    line-height: 6.24rem;
+    color: var(--video-title);
+}
+
+.video-section iframe {
+    background-color: pink;
+    width: 89vw;
+    height: auto;
+    margin:auto;
+    display:block;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(14px 14px 0px #24C2AA);
+}
+
+.info-section {
+    width: 100vw;
+    height: 72px;
+    background-color: var(--secondary-color);
+}
+
+.info-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    padding: 20px 0 20px ;
+}
+
+@media (max-width: 800px) {
+    .info-section h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .info-section h3 {
+        font-size: 11px;
+    }
+
+    .header nav ul {
+        display: none;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .video-section iframe {
+        height: 75vh;
+    }
+}
