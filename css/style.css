@@ -227,3 +227,119 @@ main {
         height: 75vh;
     }
 }
+
+.main-pokemon-info {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(180deg, #0D163B 0%, #0C021C 100%);
+}
+
+.container-pokemon-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 102px;
+    padding-bottom: 103px;
+    justify-content: center;
+}
+
+.container-pokemon-info .w5 {
+    width: 37vw;
+    min-width: 400px;
+    height: 421px;
+    margin-right: 20px;
+    background: linear-gradient(180deg, rgba(167, 240, 229, 0.072) 0%, rgba(227, 254, 250, 0.3) 100%);
+    border: 3px solid #A7F0E5;
+    border-radius: 28.5246px;
+    padding: 15px 50px;
+    text-align: center;
+}
+
+.container-pokemon-info .w7 {
+    width: 52.5vw;
+    min-width: 400px;
+    height: 421px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, rgba(167, 240, 229, 0.072) 0%, rgba(227, 254, 250, 0.3) 100%);
+    border: 3px solid #A7F0E5;
+    border-radius: 28.5246px;
+    padding: 15px 50px;
+    text-align: center;
+}
+
+.pokemon-image img {
+    width: 29.29vw;
+    min-width: 320px;
+    height: 390px;
+}
+
+.pokemon-name {
+    width: 37vw;
+    min-width: 400px;
+    height: 73px;
+    margin-right: 20px;
+    background-color: #24C2AA;
+    border: 3px solid #24C2AA;
+    border-radius: 28.5246px;
+}
+
+.pokemon-name p {
+    color: #0D1539;
+    font-size: 4.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 6.2rem;
+    padding: 5px 119px;
+    text-align: center;
+}
+
+.pokemon-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pokemon-stats .stat {
+    display: flex;
+}
+
+.pokemon-stats h4 {
+    width: 186px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 4.1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin-top: 31px;
+    text-align: start;
+}
+
+.pokemon-stats span {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 4.1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin-top: 31px;
+    margin-left: 56px;
+}
+
+.pokemon-description h4 {
+    text-align: start;
+    font-size: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 4.1rem;
+    color: #FFFFFF;
+    margin-top: 31px;
+}
+
+.pokemon-description p {
+    text-align: start;
+    font-size: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 4.1rem;
+    color: #FFFFFF;
+    margin-top: 31px;
+}
