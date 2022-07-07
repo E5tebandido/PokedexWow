@@ -3,6 +3,7 @@
   --secondary-color: #24C2AA;
   --white: #FFFFFF;
   --black-blue: #0e1336;
+  --black: #000;
   --video-title: #D5F8F3;
   --title: 4.8rem;
   --large: 3rem;
@@ -72,6 +73,7 @@ main {
 
 .main-image{
     background-color: var(--black-blue);
+    height: 57vh;
 }
 
 .main-image img {
@@ -93,6 +95,7 @@ main {
     background-image: linear-gradient(to bottom, #2e3351, #2a2e4c, #252947, #212443, #1d1f3e); 
     border-radius: 50px;   
     margin-top: 67px;
+    margin-bottom: -10vh;
     padding-bottom: 80px;
 }
 
@@ -113,10 +116,6 @@ main {
     align-content: space-between;
     width: 92vw;
     gap: 20px;
-    /*display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 260px);
-    gap: 20px;*/
 }
 
 .container-cards a *, .container-cards a{
@@ -178,7 +177,7 @@ main {
 }
 
 .video-section h2 {
-    padding: 67px 0 67px;
+    padding: 107px 0 67px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: var(--title);
@@ -213,9 +212,17 @@ main {
     padding: 20px 0 20px ;
 }
 
+/*@media (min-width: 1130px) {
+    .main-image
+}*/
+
 @media (max-width: 800px) {
     .info-section h3 {
         font-size: 15px;
+    }
+
+    .main-image {
+        height: auto;
     }
 
 }
