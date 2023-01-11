@@ -1,4 +1,5 @@
 # PokedexWow
+[![pokeball](https://cdn3.emoji.gg/emojis/pokeball.png)](https://emoji.gg/emoji/pokeball)
 
 ¿Did you know pokemon types and habilities are very important if you wanna be the king?
 
