@@ -1,2 +1,3 @@
-# Pokemon
-Web development project for test habilities
+# PokedexWow
+
+¿Did you know that pokemon types are very important if you wanna be the king?
