@@ -3,7 +3,7 @@
 
 ¿Did you know pokemon types and habilities are very important if you wanna be the king?
 
-See the demo app here 
+See the first version of the app here 
 https://teban18.github.io/PokedexWow/
 
 ![imagen](https://user-images.githubusercontent.com/44687875/211857242-a54506f5-7139-4e68-b659-c590b17baf39.png)
